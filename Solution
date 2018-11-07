@@ -1,0 +1,37 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the solve function below.
+    static void solve(int s) {
+        if(s<90)
+        {
+           System.out.println("0 No punishment"); 
+        }else if(s<=110){
+            int fine = (s-90)*300;
+            System.out.println(fine+" Warning");
+        }else{
+            int fine = (s-90)*500;
+            System.out.println(fine+" License removed");
+            
+        }
+
+
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int s = Integer.parseInt(bufferedReader.readLine().trim());
+
+        solve(s);
+
+        bufferedReader.close();
+    }
+}
