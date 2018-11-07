@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author atif
+ * @author mehre
  */
 public class ProblemA {
     public static void main(String[] args) {
