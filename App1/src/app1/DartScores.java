@@ -45,7 +45,7 @@ public class DartScores {
               
          }
          if(output.isEmpty())
-              System.out.print("impossible");
+              System.out.print("Impossible");
           else System.out.print(output);
          
      }
